@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css" />
+    <script src="./js/crud.js" type="module"></script>
+    <title>CRUD Monstruos</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.jpg" alt="Logo Halloween">
+        <nav>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">MONSTRUOS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h1>CRUD Mostruos</h1>
+      <main>
+        <section class="seccion-formulario">
+            <form>
+                <h2>Información del Monstruos</h2>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" name="txtNombre" placeholder="INGRESE NOMBRE" required>
+                
+                <label class="label" for="txtAlias"><img src="./icons/alias.png" alt="alias">Alias:</label>
+                <input type="text" name="txtAlias" placeholder="INGRESE ALTER-EGO" required>
+                <label class="label"><img src="./icons/defensa.png" alt="alias">Defensa:</label>
+                <div>
+                  ESTACA<input type="radio" name="rdoDefensa" value="Estaca" checked>
+                  PLATA<input type="radio" name="rdoDefensa" value="Plata">
+                  CRUCIFIJO<input type="radio" name="rdoDefensa" value="Crucifijo">
+                  POCION<input type="radio" name="rdoDefensa" value="Pocion">
+                </div>
+                  <label class="label">Habitad:</label>
+                <div>
+                  <input checked required type="checkbox" name="checkBosque" id="cbox1" value="Bosque" />Bosque
+                  <input  type="checkbox" name="checkPolar" id="cbox1" value="Polar" />Polar
+                  <input  type="checkbox" name="checkOceano" id="cbox1" value="Oceano" />Oceano
+                </div>
+                <label class="label"for="rangeMiedo"><img src="./icons/miedo.png" alt="alias">Miedo:</label>
+                <input type="range" name="rangeMiedo">
+                <label for="selectTipo"><img src="./icons/tipo.png" alt="alias">Tipo:</label>
+                <select required name="selectTipo" id="selectTipo"></select>
+                <input type="hidden" name="txtId">
+                <input type="image" src="./icons/guardar.png" value="Guardar" >
+                <input type="button" class="ocultar" value="Eliminar" id="eliminar"></input>
+                <input type="button" class="ocultar" value="Cancelar" id="cancelar"></button>  
+                <div id="mensaje"></div>      
+            </form>
+        </section>  
+       <section class = "seccion-tabla">
+            <img src="https://media.giphy.com/media/wMhe3bzsa1I40/giphy.gif" alt="spinner" id="spinner" width="180px">
+            <div id="tabla"></div>
+       </section>
+      </main>
+      <footer>
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">PERSONAJES</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACTO</a></li>
+              </ul>
+        </nav>  
+        <p>Laboratorio III - Todos los Derechos Reservados 2023 &copy;</p>
+    </footer>
+</body>
+</html>
